@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+//★객체★//  
+//객체리터럴 : { }를 사용해서 만든 객체들~ 이게 권장사항임.
+//걍 리터럴 : var moony.firstName = 'moony' 이런식 
+var moony = {          //객체
+    firstName:'Moony',    //속성1   키:'값'
+    lastName:'Lee'        //속성2   키:'값' 키=속성명
+}
+var moonyy = {           //객체
+    body:{               //객체 안에 객체가 또 들어갈 수 있다
+        height: 157,
+        weight: 50
+    }
+};
+console.log(moonyy.body.height);  //요렇게 불러오면 된다!
+    
+//+추가로 지우기 delete 
+delete moonyy.body.weight;
+console.log(moonyy.body);      //무게 삭제되고 height:157만 나옴     
+
+    
+        
+    
+//★배열★// 배열 안의 요소들
+//배열은 키가 없음. 그냥 나열만 해도 될 때 사용하면 된당
+// 배열리터럴 : []를 사용하여 만든 배열
+var moonyArray = ['name', 1, [1,2,3], {hi:1}];  
+console.log(moonyArray[0]);
+
+
+
+
+
+
+
+</script>
