@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+
+//★생성자★
+//    
+//function Person (name, gender){
+//    this.name = name; 
+//    this.gender = gender;
+//    this.sayHello = function(){
+//        alert(this.name + ' said "hello"');
+//    }
+//}
+//
+//var moony = new Person ('moony','f');
+//var hari = new Person ('hari','m')
+//
+//moony.sayHello();
+//hari.sayHello();
+
+
+
+
+//★프로토타입★
+
+function Person(name,gender){
+    this.name = name;
+    this.gender = gender;
+}
+Person.prototype.sayHello = function(){
+    alert(this.name + ' said "Hello"');
+}
+
+new Person ('gray','m');
+console.log(Person)    
+    
+
+</script>
