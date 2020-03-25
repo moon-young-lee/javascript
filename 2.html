@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+//    ★함수선언!★
+function addOne(x){     //x <- 매개변수, 파라미터.
+    var y = x+1;
+    return y;   //y를 밖으로 보내고(반환) 함수 종료.. 되기 때문에 이 뒤로는 실행 안됨
+}
+
+var i = addOne(1);     // 1 <-인자 (매개변수 값?)
+    console.log(i); //2
+        
+function multiply(x, y) {
+    return x*y; 
+}
+
+
+//문제!
+var a = multiply(addOne(2), addOne(4));
+console.log(a);                 //답은? addOne(2) = 3 / addOne(4) = 5  / 3*5 = 15
+    
+//나아가서 함수 자체를 인자로 넣을 수 있다. 1급 함수(?) 
+
+var mother = function(func){
+    func();
+}
+var children = function (){
+    alert ('안녕하세요')
+}
+mother(children);
+
+
+</script>
